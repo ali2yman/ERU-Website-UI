@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>about us</title>
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="header">
+
+        <nav>
+            <a href="home.html"><img src="logo.png" height="70px"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><i class='fa fa-home'></i><a href="home.html">HOME</a></li>
+                    <li class="active"><i class='fa fa-university'></i><a href="faculties.html">FACULTIES</a></li>
+                    <li class="active"><i class='fa fa-group'></i><a href="about.html">ABOUT US</a></li>
+                    <li class="active"><i class='fa fa-phone'></i><a href="contact_us.html">CONTACT US</a></li>
+                    <li class="active"><i class='fa fa-user-circle'></i><a href="signin&up.html">SIGN IN</a></li>
+                </ul>
+            </div>
+            <i class="far fa-times-circle" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="text-box">
+        <h1>ABOUT US</h1>
+        <p>ERU’s certificates are accredited by the Egyptian Supreme Council of Universities. ERU comprises the Faculty
+            of Engineering, Faculty of Pharmacy and Faculty of Artificial Intillegence.
+            Core purpose of the Egyptian Russian University is to prepare students for future challenges of global
+            competitiveness.ERU aims to develop and enhance skills of students to be qualified as outstanding graduates
+            who could satisfy market needs, develope their country.
+            ERU is offering a unique programme to empower students to secure scholarships for pursuing both MSc and PhD
+            graduate studies abroad. The university is equipped with advanced academic and scientific tools as well as
+            the professional personnel to guarantee the progress and advancement of the university through excellent
+            programmes.
+            The Egyptian Russian University is strategically located in Badr City, minutes away from Egypt’s New
+            Administrative Capital: a modern, smart city designed to meet global needs and trends.
+        </p>
+        <a href="contact_us.html" class="hero-btn">Visit us To Know More</a>
+    </div>
+
+
+    <!--footer-->
+    <section class="footer">
+
+        <div class="icons">
+            <a href="https://www.facebook.com/eru.university/"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkdin"></i>
+        </div>
+        <p>Made by UI Team <i class="fa fa-heart-o"></i> </p>
+    </section>
+    <script>
+
+        var navLinks = document.getElementById("navLink");
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
